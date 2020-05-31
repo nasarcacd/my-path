@@ -1,26 +1,46 @@
 import React from 'react';
+import { makeStyles, createStyles, Theme } from '@material-ui/core/styles';
+import Typography from '@material-ui/core/Typography';
 import HomePage from './pages/homepage/homepage.component';
 import GoalDetailPage from './pages/goalDetail/GoalDetail.component';
 import ContactPage from './pages/contact/contactPage.component';
-import { Switch, Route, Link, BrowserRouter as Router } from 'react-router-dom';
+import { Link, Switch, Route, BrowserRouter as Router } from 'react-router-dom';
 import MyPathContext from './containers/my-path.container';
+import { Grid } from '@material-ui/core';
+import HomeIcon from '@material-ui/icons/HomeRounded';
+import ContactIcon from '@material-ui/icons/ContactSupportSharp';
+import LoginIcon from '@material-ui/icons/FaceRounded';
+
+const useStyles = makeStyles((theme: Theme) =>
+  createStyles({
+    root: {
+      '& > * + *': {
+        marginLeft: theme.spacing(3),
+      },
+    },
+  }),
+);
 
 function App() {
-  return (
+  const classes = useStyles();
+ return (
     <Router>
       <div>
-        <nav>
-          <ul>
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/contact">Contact</Link>
-            </li>
-          </ul>
-        </nav>
+      <Grid container justify = "center">
+        <Typography className={classes.root}>
+          <Link to="/">
+              <HomeIcon fontSize='large' color='action' />
+          </Link>
+          <Link to="/contact">
+              <ContactIcon fontSize='large' color='action' />
+          </Link>
+          <Link to="/login">
+              <LoginIcon fontSize='large' color='action' />
+          </Link>
+        </Typography>
+      </Grid>
         <Switch>
-          <Route path='/goals'>
+          <Route path='/goals/:path/:goal'>
             <GoalDetailPage />
           </Route>
           <Route exact path='/'>

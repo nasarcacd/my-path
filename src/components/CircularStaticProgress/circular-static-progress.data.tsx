@@ -3,7 +3,7 @@ import Node from './node';
 const PR0GRESS_DATA: Node = {
     percentage: 60,
     title: `My Carrier Path!`,
-    slug: '',
+    slug: 'carrier-path',
     nodes: [
       {
         title: 'React',
@@ -49,13 +49,13 @@ const PR0GRESS_DATA: Node = {
               {
                 title: 'Terminar los conceptos de React',
                 percentage: 0,
-                slug: '',
+                slug: 'terminar-los-conceptos-de-reacr',
                 nodes: []
               },
               {
                 title: 'Hacer Búsquedas de Posts',
                 percentage: 0,
-                slug: '',
+                slug: 'hacer-busquedas-de-posts',
                 nodes: []
               }
             ]
@@ -68,25 +68,25 @@ const PR0GRESS_DATA: Node = {
               {
                 title: 'Integrar Material UI',
                 percentage: 0,
-                slug: '',
+                slug: 'integrar-material-ui',
                 nodes: []
               },
               {
                 title: 'Integrar con MongoDB',
                 percentage: 0,
-                slug: '',
+                slug: 'integrar-con-mongodb',
                 nodes: []
               },
               {
                 title: 'Route and Routing',
-                percentage: 0,
-                slug: '',
+                percentage: 95,
+                slug: 'route-and-routing',
                 nodes: []
               },
               {
                 title: 'Ver Nodos Hijos',
-                percentage: 0,
-                slug: '',
+                percentage: 90,
+                slug: 'ver-nodos-hijos',
                 nodes: []
               }
             ]
@@ -99,7 +99,7 @@ const PR0GRESS_DATA: Node = {
               {
                 title: 'Integrate pagination with MongoDB',
                 percentage: 0,
-                slug: '',
+                slug: 'integrate-pagination-with-mongodb',
                 nodes: []
               },
             ]

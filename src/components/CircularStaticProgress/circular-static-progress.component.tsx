@@ -26,7 +26,7 @@ const CircularStatic = (props: { data: Node }) => {
               <div className={classes.paper}>
                 <CircularProgress className={classes.secondaryNode} variant="static" value={element.percentage} size="7rem" />
                 <p>{element.percentage}%</p>
-                <Link to={{pathname: `/goals/${element.slug}`, state: element}}>{element.title}</Link>
+                <Link to={{pathname: `/goals/${props.data.slug}/${element.slug}`, state: element}}>{element.title}</Link>
               </div>
             </Grid>    
           )}

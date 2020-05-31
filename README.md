@@ -1,6 +1,6 @@
 # My Path React WebApp
 
-React App built with typescript and Material UI to get know desired career path and advance percentage. Project built with React 16.13, [Material UI](https://material-ui.com/).
+React App to get know desired career path and advance percentage. Project built with React 16.13, [Material UI](https://material-ui.com/).
 
 ## Getting Started
 
@@ -48,7 +48,8 @@ Using heroku follow the next instructions:
 
 ```
 heroku login
-heroku create my-path-webapp
+heroku create my-path-webapp --buildpack mars/create-react-app
+
 git push heroku master
 ```
 
