@@ -8,17 +8,21 @@ const useStyles = makeStyles((theme: Theme) =>
     paper: {
       padding: theme.spacing(2),
       textAlign: 'center',
-      color: theme.palette.text.secondary,
+      color: '#6577A0',
+      fontWeight: 700,
     },
     title: {
-      fontWeight: 700
+      fontWeight: 700,
     },
     span: {
       fontWeight: 700,
       cursor: 'pointer'
     },
+    primaryNode: {
+      color: '#6577A0'
+    },
     secondaryNode: {
-      color: theme.palette.text.secondary
+      color: '#9AB2E7'
     }
   }),
 );
