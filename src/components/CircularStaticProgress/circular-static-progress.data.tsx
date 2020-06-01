@@ -48,9 +48,16 @@ const PR0GRESS_DATA: Node = {
             nodes: [
               {
                 title: 'Terminar los conceptos de React',
-                percentage: 0,
+                percentage: 80,
                 slug: 'terminar-los-conceptos-de-reacr',
-                nodes: []
+                nodes: [
+                  {
+                    title: 'Articulo React Router & Routing',
+                    percentage: 0,
+                    slug: 'react-router-routing',
+                    nodes: []
+                  }
+                ]
               },
               {
                 title: 'Hacer Búsquedas de Posts',
@@ -67,14 +74,27 @@ const PR0GRESS_DATA: Node = {
             nodes: [
               {
                 title: 'Integrar Material UI',
-                percentage: 0,
+                percentage: 50,
                 slug: 'integrar-material-ui',
-                nodes: []
+                nodes: [
+                  {
+                    title: 'Integrar Estilos generales en index.js y agregar archivo Theme',
+                    percentage: 0,
+                    slug: 'integrar-estilos-generales',
+                    nodes: []
+                  },
+                  {
+                    title: 'Crear archivo goal-detail.style.tsx',
+                    percentage: 0,
+                    slug: 'crear-archivo-gol-detail.style.tsx',
+                    nodes: []
+                  }
+                ]
               },
               {
-                title: 'Integrar con MongoDB',
+                title: 'Integrar con Firebase',
                 percentage: 0,
-                slug: 'integrar-con-mongodb',
+                slug: 'integrar-con-firebase',
                 nodes: []
               },
               {
