@@ -10,6 +10,8 @@ import { Grid } from '@material-ui/core';
 import HomeIcon from '@material-ui/icons/HomeRounded';
 import ContactIcon from '@material-ui/icons/ContactSupportSharp';
 import LoginIcon from '@material-ui/icons/FaceRounded';
+import { ThemeProvider } from '@material-ui/core/styles';
+import theme from './components/ui/Theme';
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -24,7 +26,8 @@ const useStyles = makeStyles((theme: Theme) =>
 function App() {
   const classes = useStyles();
  return (
-    <Router>
+   <ThemeProvider theme={theme}>
+     <Router>
       <div>
       <Grid container justify = "center">
         <Typography className={classes.root}>
@@ -54,6 +57,7 @@ function App() {
         </Switch>
       </div> 
     </Router>
+   </ThemeProvider>
   );
 }
 

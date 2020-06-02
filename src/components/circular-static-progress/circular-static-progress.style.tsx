@@ -9,10 +9,14 @@ const useStyles = makeStyles((theme: Theme) =>
       padding: theme.spacing(2),
       textAlign: 'center',
       color: '#6577A0',
-      fontWeight: 700,
+      fontWeight: 700
     },
     title: {
       fontWeight: 700,
+    },
+    secondTitle: {
+      fontWeight: 700,
+      fontSize: '1rem'
     },
     span: {
       fontWeight: 700,
@@ -23,6 +27,9 @@ const useStyles = makeStyles((theme: Theme) =>
     },
     secondaryNode: {
       color: '#9AB2E7'
+    },
+    link: {
+      textDecoration: 'none'
     }
   }),
 );

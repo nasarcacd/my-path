@@ -1,19 +1,12 @@
 import React from 'react';
-import CircularStatic from '../../components/CircularStaticProgress/circular-static-progress.component';
+import CircularStatic from '../../components/circular-static-progress/circular-static-progress.component';
 import Container from '@material-ui/core/Container';
 import { useHistory, useLocation } from 'react-router-dom';
-import Node from '../../components/CircularStaticProgress/node';
+import Node from '../../components/circular-static-progress/node';
 import Fab from '@material-ui/core/Fab';
 import BackIcon from '@material-ui/icons/ArrowBackTwoTone';
-import { makeStyles, Grid } from '@material-ui/core';
-
-const useStyles = makeStyles(theme => ({
-  grid: {
-    marginTop: '3rem',
-    marginBottom: '2rem',
-    justifyContent: 'center'
-  },
-}));
+import { Grid } from '@material-ui/core';
+import useStyles from './goal-detail.style';
 
 const GoalDetail = () => {
   let location = useLocation();

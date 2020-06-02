@@ -6,37 +6,6 @@ const PR0GRESS_DATA: Node = {
     slug: 'carrier-path',
     nodes: [
       {
-        title: 'React',
-        percentage: 70,
-        slug: 'react',
-        nodes: []
-      },
-      {
-        title: 'Node JS',
-        percentage: 70,
-        slug: 'nodejs',
-        nodes: []
-      },
-      {
-        title: 'NoSQL',
-        percentage: 61,
-        slug: 'nosql',
-        nodes: []
-      }
-      ,
-      {
-        title: 'Kubernates',
-        percentage: 30,
-        slug: 'kubernates',
-        nodes: []
-      },
-      {
-        title: 'AWS',
-        percentage: 20,
-        slug: 'aws',
-        nodes: []
-      },
-      {
         title: 'WeCode Pojects',
         percentage: 60,
         slug: 'wecode-projects',
@@ -49,7 +18,7 @@ const PR0GRESS_DATA: Node = {
               {
                 title: 'Terminar los conceptos de React',
                 percentage: 80,
-                slug: 'terminar-los-conceptos-de-reacr',
+                slug: 'terminar-los-conceptos-de-react',
                 nodes: [
                   {
                     title: 'Articulo React Router & Routing',
@@ -74,18 +43,18 @@ const PR0GRESS_DATA: Node = {
             nodes: [
               {
                 title: 'Integrar Material UI',
-                percentage: 50,
+                percentage: 100,
                 slug: 'integrar-material-ui',
                 nodes: [
                   {
                     title: 'Integrar Estilos generales en index.js y agregar archivo Theme',
-                    percentage: 0,
+                    percentage: 100,
                     slug: 'integrar-estilos-generales',
                     nodes: []
                   },
                   {
                     title: 'Crear archivo goal-detail.style.tsx',
-                    percentage: 0,
+                    percentage: 100,
                     slug: 'crear-archivo-gol-detail.style.tsx',
                     nodes: []
                   }
@@ -124,9 +93,65 @@ const PR0GRESS_DATA: Node = {
               },
             ]
           },
+          {
+            title: 'nasarca-crwn-clothing',
+            percentage: 0,
+            slug: 'nasarca-crwn-clothing',
+            nodes: [
+              {
+                title: 'Carrito de compras con Firebase',
+                percentage: 0,
+                slug: 'carrito-compras-con-firebase',
+                nodes: []
+              },
+              {
+                title: 'CRUD de productos con Firebase',
+                percentage: 0,
+                slug: 'crud-de-productos-con-firebase',
+                nodes: []
+              },
+              {
+                title: 'Integrar, definir métodos de págo: Greenpay / Stripe',
+                percentage: 0,
+                slug: 'integrar-definir-metodos-de-pago',
+                nodes: []
+              },
+            ]
+          },
 
         ] 
+      },
+      {
+        title: 'React',
+        percentage: 70,
+        slug: 'react',
+        nodes: []
+      },
+      {
+        title: 'Node JS',
+        percentage: 70,
+        slug: 'nodejs',
+        nodes: []
+      },
+      {
+        title: 'NoSQL',
+        percentage: 61,
+        slug: 'nosql',
+        nodes: []
       }
+      ,
+      {
+        title: 'Kubernates',
+        percentage: 30,
+        slug: 'kubernates',
+        nodes: []
+      },
+      {
+        title: 'AWS',
+        percentage: 20,
+        slug: 'aws',
+        nodes: []
+      },
   ]
   };
 

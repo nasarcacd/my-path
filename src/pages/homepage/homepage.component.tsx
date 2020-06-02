@@ -1,5 +1,5 @@
 import React from 'react';
-import CircularStatic from '../../components/CircularStaticProgress/circular-static-progress.component';
+import CircularStatic from '../../components/circular-static-progress/circular-static-progress.component';
 import Container from '@material-ui/core/Container';
 import MyPathContext from '../../containers/my-path.container';
 
