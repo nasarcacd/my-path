@@ -20,7 +20,7 @@ const CircularStatic = (props: { data: Node }) => {
             </div>
           </Grid>
           {props.data.nodes.map((element, index) => 
-            <Grid key={index} item xs={12} sm={4}>
+            <Grid key={index} item xs={12} sm={4} md={3}>
               <Link to={{pathname: `/goals/${props.data.slug}/${element.slug}`, state: element}} className={classes.link}>
                 <div className={classes.paper}>
                   <CircularProgress className={classes.secondaryNode} variant="static" value={element.percentage} size="7rem" />

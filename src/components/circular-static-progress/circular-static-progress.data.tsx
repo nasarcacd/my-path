@@ -95,7 +95,7 @@ const PR0GRESS_DATA: Node = {
           },
           {
             title: 'nasarca-crwn-clothing',
-            percentage: 0,
+            percentage: 50,
             slug: 'nasarca-crwn-clothing',
             nodes: [
               {
