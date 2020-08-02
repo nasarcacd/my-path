@@ -12,26 +12,20 @@ const PR0GRESS_DATA: Node = {
         nodes: [
           {
             title: 'Blog Gastby',
-            percentage: 80,
+            percentage: 90,
             slug: 'blog-gastby',
             nodes: [
               {
                 title: 'Terminar los conceptos de React',
-                percentage: 80,
+                percentage: 100,
                 slug: 'terminar-los-conceptos-de-react',
                 nodes: [
-                  {
-                    title: 'Articulo React Router & Routing',
-                    percentage: 0,
-                    slug: 'react-router-routing',
-                    nodes: []
-                  }
                 ]
               },
               {
-                title: 'Hacer Búsquedas de Posts',
+                title: 'Agregar Secciones: projects, interests, social media contact',
                 percentage: 0,
-                slug: 'hacer-busquedas-de-posts',
+                slug: 'agregar-secciones-projects-interests-social-media-contact',
                 nodes: []
               }
             ]
@@ -46,6 +40,12 @@ const PR0GRESS_DATA: Node = {
                 percentage: 100,
                 slug: 'integrar-material-ui',
                 nodes: [
+                  {
+                    title: 'Integrar Context API en nodos hijos',
+                    percentage: 0,
+                    slug: 'integrar-context-api',
+                    nodes: []
+                  },
                   {
                     title: 'Integrar Estilos generales en index.js y agregar archivo Theme',
                     percentage: 100,
@@ -68,13 +68,13 @@ const PR0GRESS_DATA: Node = {
               },
               {
                 title: 'Route and Routing',
-                percentage: 95,
+                percentage: 100,
                 slug: 'route-and-routing',
                 nodes: []
               },
               {
                 title: 'Ver Nodos Hijos',
-                percentage: 90,
+                percentage: 100,
                 slug: 'ver-nodos-hijos',
                 nodes: []
               }
@@ -100,14 +100,14 @@ const PR0GRESS_DATA: Node = {
             nodes: [
               {
                 title: 'Carrito de compras con Firebase',
-                percentage: 0,
+                percentage: 100,
                 slug: 'carrito-compras-con-firebase',
                 nodes: []
               },
               {
-                title: 'CRUD de productos con Firebase',
-                percentage: 0,
-                slug: 'crud-de-productos-con-firebase',
+                title: 'CRUD/Admin de productos con Firebase',
+                percentage: 90,
+                slug: 'crud-admin-de-productos-con-firebase',
                 nodes: []
               },
               {
@@ -128,21 +128,58 @@ const PR0GRESS_DATA: Node = {
         nodes: []
       },
       {
-        title: 'Node JS',
-        percentage: 70,
-        slug: 'nodejs',
+        title: 'Lern React Native',
+        percentage: 10,
+        slug: 'react-native',
         nodes: []
       },
       {
-        title: 'NoSQL',
-        percentage: 61,
-        slug: 'nosql',
+        title: 'Learning Flutter',
+        percentage: 10,
+        slug: 'flutter',
         nodes: []
-      }
-      ,
+      },
+      {
+        title: 'Learning Angular',
+        percentage: 20,
+        slug: 'angular',
+        nodes: []
+      },
+      {
+        title: 'Node JS',
+        percentage: 75,
+        slug: 'nodejs',
+        nodes: [
+          {
+            title: 'Nest JS get Started',
+            percentage: 0,
+            slug: 'nest-js-get-started',
+            nodes: []
+          },
+          {
+            title: 'Creando API con node JS (Nest JS / Express) y Firebase',
+            percentage: 0,
+            slug: 'creando-api-nodejs-firebase',
+            nodes: []
+          },
+        ]
+      },
+      {
+        title: 'NoSQL',
+        percentage: 10,
+        slug: 'nosql',
+        nodes: [
+          {
+            title: 'MongoDB School',
+            percentage: 10,
+            slug: 'mongodb-school',
+            nodes: []
+          }
+        ]
+      },
       {
         title: 'Kubernates',
-        percentage: 30,
+        percentage: 20,
         slug: 'kubernates',
         nodes: []
       },
@@ -151,6 +188,19 @@ const PR0GRESS_DATA: Node = {
         percentage: 20,
         slug: 'aws',
         nodes: []
+      },
+      {
+        title: 'GCP',
+        percentage: 20,
+        slug: 'gcp',
+        nodes: [
+          {
+            title: 'Emprezar con certificación GCP',
+            percentage: 0,
+            slug: 'emprezar-certificacion-gcp',
+            nodes: []
+          }
+        ]
       },
   ]
   };
