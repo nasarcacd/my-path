@@ -146,6 +146,24 @@ const PR0GRESS_DATA: Node = {
         nodes: []
       },
       {
+        title: 'Learn golang (go)',
+        percentage: 0,
+        slug: 'go',
+        nodes: []
+      },
+      {
+        title: 'Learn Python',
+        percentage: 0,
+        slug: 'python',
+        nodes: []
+      },
+      {
+        title: 'Learn Python',
+        percentage: 0,
+        slug: 'python',
+        nodes: []
+      },
+      {
         title: 'Node JS',
         percentage: 75,
         slug: 'nodejs',
