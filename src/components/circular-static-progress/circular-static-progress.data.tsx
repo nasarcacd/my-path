@@ -158,9 +158,9 @@ const PR0GRESS_DATA: Node = {
         nodes: []
       },
       {
-        title: 'Learn Python',
+        title: 'Redis',
         percentage: 0,
-        slug: 'python',
+        slug: 'redis',
         nodes: []
       },
       {
