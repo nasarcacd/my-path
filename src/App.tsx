@@ -1,36 +1,28 @@
 import React from 'react';
-import { makeStyles, createStyles, Theme } from '@material-ui/core/styles';
-import Typography from '@material-ui/core/Typography';
+import Typography from '@mui/material/Typography';
 import HomePage from './pages/homepage/homepage.component';
 import GoalDetailPage from './pages/goal-detail/goal-detail.component';
 import ContactPage from './pages/contact/contact-page.component';
-import { Link, Switch, Route, BrowserRouter as Router } from 'react-router-dom';
+import { Link, Routes, Route, BrowserRouter as Router } from 'react-router-dom';
 import MyPathContext from './containers/my-path.container';
-import { Grid } from '@material-ui/core';
-import HomeIcon from '@material-ui/icons/HomeRounded';
-import ContactIcon from '@material-ui/icons/ContactSupportSharp';
-import LoginIcon from '@material-ui/icons/FaceRounded';
-import { ThemeProvider } from '@material-ui/core/styles';
+import { Grid } from '@mui/material';
+import HomeIcon from '@mui/icons-material/HomeRounded';
+import ContactIcon from '@mui/icons-material/ContactSupportSharp';
+import LoginIcon from '@mui/icons-material/FaceRounded';
+import { ThemeProvider } from '@mui/material/styles';
 import theme from './components/ui/Theme';
 
-const useStyles = makeStyles((theme: Theme) =>
-  createStyles({
-    root: {
-      '& > * + *': {
-        marginLeft: theme.spacing(3),
-      },
-    },
-  }),
-);
-
 function App() {
-  const classes = useStyles();
  return (
    <ThemeProvider theme={theme}>
      <Router>
       <div>
-      <Grid container justify = "center">
-        <Typography className={classes.root}>
+      <Grid container justifyContent="center">
+        <Typography sx={{
+          '& > * + *': {
+            marginLeft: theme.spacing(3),
+          },
+        }}>
           <Link to="/">
               <HomeIcon fontSize='large' color='action' />
           </Link>
@@ -42,20 +34,16 @@ function App() {
           </Link>
         </Typography>
       </Grid>
-        <Switch>
-          <Route path='/goals/:path/:goal'>
-            <GoalDetailPage />
-          </Route>
-          <Route exact path='/'>
+        <Routes>
+          <Route path='/goals/:path/:goal' element={<GoalDetailPage />} />
+          <Route path='/' element={
             <MyPathContext.Provider>
               <HomePage />
             </MyPathContext.Provider>
-          </Route>
-          <Route path='/contact'>
-            <ContactPage />
-          </Route>
-        </Switch>
-      </div> 
+          } />
+          <Route path='/contact' element={<ContactPage />} />
+        </Routes>
+      </div>
     </Router>
    </ThemeProvider>
   );

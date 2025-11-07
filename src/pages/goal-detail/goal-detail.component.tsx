@@ -1,26 +1,31 @@
 import React from 'react';
 import CircularStatic from '../../components/circular-static-progress/circular-static-progress.component';
-import Container from '@material-ui/core/Container';
-import { useHistory, useLocation } from 'react-router-dom';
+import Container from '@mui/material/Container';
+import { useNavigate, useLocation } from 'react-router-dom';
 import Node from '../../components/circular-static-progress/node';
-import Fab from '@material-ui/core/Fab';
-import BackIcon from '@material-ui/icons/ArrowBackTwoTone';
-import { Grid } from '@material-ui/core';
-import useStyles from './goal-detail.style';
+import Fab from '@mui/material/Fab';
+import BackIcon from '@mui/icons-material/ArrowBackTwoTone';
+import { Grid } from '@mui/material';
 
 const GoalDetail = () => {
   let location = useLocation();
-  let history = useHistory();
-  let classes = useStyles();
+  let navigate = useNavigate();
 
   const data = location.state as Node || []
 
   return (
     <Container maxWidth='md'>
       <CircularStatic data={data} />
-      <Grid className={classes.grid} container>
+      <Grid
+        container
+        sx={{
+          marginTop: '3rem',
+          marginBottom: '2rem',
+          justifyContent: 'center'
+        }}
+      >
         <Fab size='large' aria-label='back'>
-          <BackIcon color='action' fontSize='large' onClick={history.goBack} />
+          <BackIcon color='action' fontSize='large' onClick={() => navigate(-1)} />
         </Fab>
       </Grid>
     </Container>

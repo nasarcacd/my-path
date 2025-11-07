@@ -1,9 +1,9 @@
-import { createMuiTheme } from '@material-ui/core/styles';
+import { createTheme } from '@mui/material/styles';
 
 const blue = '#277db7';
 const orange = '#FFBA60';
 
-export default createMuiTheme({
+export default createTheme({
     palette: {
         primary: {
             main: `${blue}`
@@ -14,7 +14,8 @@ export default createMuiTheme({
     },
     typography: {
         fontFamily: [
-            'Press Start 2P',       
+            'Press Start 2P',
+            'sans-serif'
         ],
         fontSize: 18,
     }

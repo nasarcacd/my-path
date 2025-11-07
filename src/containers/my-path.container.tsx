@@ -4,7 +4,7 @@ import Node from '../components/circular-static-progress/node';
 import createContainer from '../utils/create-context.util';
 
 export const useMyPath = () => {
-    const [initialData, setInitialData] = React.useState(PR0GRESS_DATA as Node);
+    const [initialData] = React.useState(PR0GRESS_DATA as Node);
     return initialData;
 };
 
