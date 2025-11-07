@@ -29,8 +29,8 @@ Visit the live application: [https://my-path.vercel.app/](https://my-path.vercel
 Before you begin, ensure you have the following installed:
 
 ```bash
-Node.js >= 16.x
-yarn >= 1.22.x (or npm >= 8.x)
+Node.js >= 22.x (v22 recommended)
+yarn >= 1.22.x (or npm >= 10.x)
 ```
 
 ## 🔧 Installation
